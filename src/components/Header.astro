@@ -1,0 +1,27 @@
+---
+import Nav from "./ui/Nav.astro";
+---
+
+<header class="py-8 xl:py-12">
+  <div class="px-8 flex justify-between items-center">
+    {/* Logo */}
+    <a href="/">
+      <h1 class="text-4xl font-semibold">
+        Jeifer<span
+          class="text-secondary">.</span
+        >
+      </h1>
+    </a>
+    
+    {/* Desktop Nav */}
+    <div class="hidden xl:flex items-center gap-8">
+      <Nav />
+      <a href="/contact" class="bg-secondary text-background px-4 py-2 rounded-full hover:bg-secondary-hover duration-300">
+        <button type="button">Hire me</button>
+      </a>
+    </div>
+
+    {/* Mobile Nav */}
+    <div class="xl:hidden">mobile nav</div>
+  </div>
+</header>

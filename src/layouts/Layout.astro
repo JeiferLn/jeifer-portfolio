@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 ---
 
@@ -9,7 +10,14 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Jeifer Portfolio</title>
+    <title>Jeifer Leon | Web Developer and Frontend Specialist</title>
+    <meta
+      name="description"
+      content="Portfolio of Jeifer Leon, a web developer specializing in modern technologies such as Astro, React, and TailwindCSS."
+    />
   </head>
-  <body class="bg-secondary"></body><slot />
+  <body class="bg-background text-primary">
+    <Header />
+    <slot />
+  </body>
 </html>

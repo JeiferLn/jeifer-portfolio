@@ -4,9 +4,19 @@ export const content = [
 ];
 export const theme = {
   extend: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+    },
     colors: {
+      background: "#1c1c22",
       primary: "#fffcdc",
-      secondary: "#14281d",
+      secondary: {
+        DEFAULT: "#2e6b50",
+        hover: "#3fbf75",
+      },
     },
   },
 };
