@@ -1,15 +1,7 @@
 import { motion } from "framer-motion";
-import { usePageTransitionStore } from "../../stores/usePageTransitionStore";
+import { usePageTransitionStore } from "../../../stores/usePageTransitionStore";
 
-const links = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Experience", href: "/experience" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-];
-
-function Nav() {
+function Nav({ links }: { links: { name: string; href: string }[] }) {
   const pathname = window.location.pathname;
 
   const setPageChange = usePageTransitionStore((state) => state.setPageChange);
@@ -24,7 +16,7 @@ function Nav() {
       setPageChange(true);
       setPageHidden(false);
       window.location.href = href;
-    }, 300);
+    }, 200);
   };
 
   return (
@@ -33,8 +25,8 @@ function Nav() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: pageHidden ? 0 : 1, y: 0 }}
       transition={{
-        duration: pageHidden ? 0.3 : !pageChange ? 0 : 0.5,
-        delay: pageHidden ? 0 : !pageChange ? 0 : 0.9,
+        duration: pageHidden ? 0.2 : !pageChange ? 0 : 0.5,
+        delay: pageHidden ? 0 : !pageChange ? 0 : 0.6,
       }}
     >
       {links.map((item) => (

@@ -30,7 +30,7 @@ function StairTransition() {
   return (
     <AnimatePresence>
       {pageTransaction && (
-        <div className="fixed top-0 left-0 flex w-full h-screen z-50 rotate-180 pointer-events-none">
+        <div className="fixed top-0 left-0 flex w-full h-screen z-50 rotate-180">
           {[...Array(6)].map((_, index) => (
             <motion.div
               key={index}

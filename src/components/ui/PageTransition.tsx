@@ -1,14 +1,9 @@
 import { easeInOut, motion } from "framer-motion";
 import { usePageTransitionStore } from "../../stores/usePageTransitionStore";
-import { useEffect } from "react";
 
 function PageTransition({ children }: { children: React.ReactNode }) {
   const pageChange = usePageTransitionStore((state) => state.pageChange);
   const pageHidden = usePageTransitionStore((state) => state.pageHidden);
-
-  useEffect(() => {
-    console.log(pageHidden);
-  }, [pageHidden]);
 
   return (
     <div key={window.location.pathname}>
@@ -18,7 +13,7 @@ function PageTransition({ children }: { children: React.ReactNode }) {
           opacity: pageHidden ? 1 : 0,
           transition: {
             delay: pageHidden || !pageChange ? 0 : 0.7,
-            duration: pageHidden ? 0.3 : 0.5,
+            duration: pageHidden ? 0.2 : 0.5,
             ease: easeInOut,
           },
         }}
