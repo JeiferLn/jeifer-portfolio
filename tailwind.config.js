@@ -14,8 +14,8 @@ export const theme = {
       background: "#1c1c22",
       primary: "#fffcdc",
       secondary: {
-        DEFAULT: "#2e6b50",
-        hover: "#3fbf75",
+        DEFAULT: "#38a86d",
+        hover: "#e6d89d",
       },
     },
   },

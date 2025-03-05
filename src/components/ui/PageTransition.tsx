@@ -1,0 +1,35 @@
+import { easeInOut, motion } from "framer-motion";
+import { usePageTransitionStore } from "../../stores/usePageTransitionStore";
+import { useEffect } from "react";
+
+function PageTransition({ children }: { children: React.ReactNode }) {
+  const pageChange = usePageTransitionStore((state) => state.pageChange);
+  const pageHidden = usePageTransitionStore((state) => state.pageHidden);
+
+  useEffect(() => {
+    console.log(pageHidden);
+  }, [pageHidden]);
+
+  return (
+    <div key={window.location.pathname}>
+      <motion.div
+        initial={{ opacity: 1 }}
+        animate={{
+          opacity: pageHidden ? 1 : 0,
+          transition: {
+            delay: pageHidden || !pageChange ? 0 : 0.7,
+            duration: pageHidden ? 0.3 : 0.5,
+            ease: easeInOut,
+          },
+        }}
+        exit={{ opacity: 1, transition: { duration: 2, ease: easeInOut } }}
+        className={`w-full h-full fixed inset-0 bg-background ${
+          !pageHidden ? "pointer-events-none" : "pointer-events-auto"
+        }`}
+      />
+      {children}
+    </div>
+  );
+}
+
+export default PageTransition;

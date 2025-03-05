@@ -1,5 +1,5 @@
 ---
-import Nav from "./ui/Nav.astro";
+import Nav from "./ui/Nav";
 ---
 
 <header class="py-8 xl:py-12">
@@ -15,8 +15,8 @@ import Nav from "./ui/Nav.astro";
     
     {/* Desktop Nav */}
     <div class="hidden xl:flex items-center gap-8">
-      <Nav />
-      <a href="/contact" class="bg-secondary text-background px-4 py-2 rounded-full hover:bg-secondary-hover duration-300">
+      <Nav client:only/>
+      <a href="/contact" class="bg-secondary text-background px-4 py-2 rounded-full hover:bg-secondary-hover duration-300 hover:scale-105">
         <button type="button">Hire me</button>
       </a>
     </div>

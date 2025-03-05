@@ -1,5 +1,8 @@
 ---
 import Header from "../components/Header.astro";
+import PageTransition from "../components/ui/PageTransition";
+import StairTransition from "../components/ui/StairTransition";
+
 import "../styles/global.css";
 ---
 
@@ -17,7 +20,11 @@ import "../styles/global.css";
     />
   </head>
   <body class="bg-background text-primary">
-    <Header />
-    <slot />
+    <StairTransition client:only />
+
+    <PageTransition client:only>
+      <Header />
+      <slot />
+    </PageTransition>
   </body>
 </html>
