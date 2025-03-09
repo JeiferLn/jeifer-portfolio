@@ -11,9 +11,9 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Jeifer Leon | Web Developer and Frontend Specialist</title>
+    <title>Jeifer Leon | Frontend Developer</title>
     <meta
       name="description"
       content="Portfolio of Jeifer Leon, a web developer specializing in modern technologies such as Astro, React, and TailwindCSS."
@@ -24,7 +24,11 @@ import "../styles/global.css";
 
     <PageTransition client:only>
       <Header />
-      <slot />
+
+      <main>
+        <slot />
+      </main>
+      
     </PageTransition>
   </body>
 </html>

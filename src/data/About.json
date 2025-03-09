@@ -1,0 +1,44 @@
+{
+  "aboutMe": {
+    "title": "About me",
+    "description": "I am a person who loves to learn new things and continuously improve my skills. I enjoy exploring new technologies and applying them in creative ways.",
+    "info": [
+      {
+        "fieldName": "name",
+        "fielValue": "Jeifer Leon"
+      },
+      {
+        "fieldName": "Phone",
+        "fielValue": "+57 315 828 0984"
+      },
+      {
+        "fieldName": "Experience",
+        "fielValue": "+2 Yeras"
+      },
+      {
+        "fieldName": "Email",
+        "fielValue": "jeiferleon@gmail.com"
+      },
+      {
+        "fieldName": "Nacionality",
+        "fielValue": "Colombian"
+      },
+      {
+        "fieldName": "Location",
+        "fielValue": "Cucúta, Colombia"
+      },
+      {
+        "fieldName": "Freelance",
+        "fielValue": "Available"
+      },
+      {
+        "fieldName": "Lenguaje",
+        "fielValue": "Español, Ingles B1"
+      }
+    ]
+  },
+  "experience": {
+    "title": "My experience",
+    "description": "I have experience as a freelancer in business, academic, and personal projects, applying innovative technological solutions and ensuring client satisfaction."
+  }
+}

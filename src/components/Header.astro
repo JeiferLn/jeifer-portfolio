@@ -1,18 +1,10 @@
 ---
 import Nav from "./ui/nav/Nav";
 import MobileNav from "./ui/nav/MobileNav";
-
-const links = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Experience", href: "/experience" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-];
 ---
 
 <header class="py-8 xl:py-12">
-  <div class="px-8 flex justify-between items-center">
+  <div class="flex justify-between items-center">
     {/* Logo */}
     <a href="/">
       <h1 class="text-4xl font-semibold">
@@ -24,7 +16,7 @@ const links = [
     
     {/* Desktop Nav */}
     <div class="hidden xl:flex items-center gap-8">
-      <Nav links={links} client:only/>
+      <Nav client:only/>
       <a href="/contact" class="bg-secondary text-background px-4 py-2 rounded-full hover:bg-secondary-hover duration-300 hover:scale-105">
         <button type="button">Hire me</button>
       </a>
@@ -32,7 +24,7 @@ const links = [
 
     {/* Mobile Nav */}
     <div class="xl:hidden">
-      <MobileNav links={links} client:only/>
+      <MobileNav client:only/>
     </div>
   </div>
 </header>

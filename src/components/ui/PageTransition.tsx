@@ -6,14 +6,14 @@ function PageTransition({ children }: { children: React.ReactNode }) {
   const pageHidden = usePageTransitionStore((state) => state.pageHidden);
 
   return (
-    <div key={window.location.pathname}>
+    <div key={window.location.pathname} className="px-[8%]">
       <motion.div
         initial={{ opacity: 1 }}
         animate={{
           opacity: pageHidden ? 1 : 0,
           transition: {
             delay: pageHidden || !pageChange ? 0 : 0.7,
-            duration: pageHidden ? 0.2 : 0.5,
+            duration: pageHidden ? 0.2 : 1.1,
             ease: easeInOut,
           },
         }}

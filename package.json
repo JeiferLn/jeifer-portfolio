@@ -16,12 +16,14 @@
     "astro": "^5.4.1",
     "framer-motion": "^12.4.10",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
     "tailwindcss": "^3.4.17",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@types/react-countup": "^4.3.0",
     "@types/react-router-dom": "^5.3.3"
   }
 }

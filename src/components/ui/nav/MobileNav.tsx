@@ -1,10 +1,14 @@
+import links from "../../../data/Routes.json";
+
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import MenuNav from "../../icons/MenuNav";
+
+import { AnimatePresence, motion } from "framer-motion";
 import { usePageTransitionStore } from "../../../stores/usePageTransitionStore";
+
 import CloseIcon from "../../icons/CloseIcon";
 
-function MobileNav({ links }: { links: { name: string; href: string }[] }) {
+function MobileNav() {
   const pathname = window.location.pathname;
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -54,11 +58,13 @@ function MobileNav({ links }: { links: { name: string; href: string }[] }) {
                 <CloseIcon />
               </div>
 
+              <h1 className="text-3xl pb-5">Jeifer<span className="text-secondary">.</span></h1>
+
               {links.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`nav-link text-2xl ${
+                  className={`nav-link text-xl ${
                     pathname === item.href &&
                     "text-secondary after:scale-x-100 after:bg-secondary"
                   }`}

@@ -1,7 +1,9 @@
+import links from "../../../data/Routes.json";
+
 import { motion } from "framer-motion";
 import { usePageTransitionStore } from "../../../stores/usePageTransitionStore";
 
-function Nav({ links }: { links: { name: string; href: string }[] }) {
+function Nav() {
   const pathname = window.location.pathname;
 
   const setPageChange = usePageTransitionStore((state) => state.setPageChange);
