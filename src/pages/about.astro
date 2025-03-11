@@ -1,9 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import AboutNav from "../components/about/AboutNav";
+import AboutContent from "../components/about/AboutContent";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main>
-    <h1>About me</h1>
+  <main class="flex flex-col lg:flex-row justify-center lg:justify-between lg:pt-4">
+    <AboutNav client:load/>
+
+    <AboutContent client:only/>
   </main>
 </Layout>

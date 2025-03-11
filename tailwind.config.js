@@ -12,11 +12,15 @@ export const theme = {
     },
     colors: {
       background: "#1c1c22",
-      primary: "#fff4cc",
+      primary: {
+        DEFAULT: "#fff4cc",
+        description: "#b0b0b0",
+      },
       secondary: {
         DEFAULT: "#f4b400",
         hover: "#ffdd78",
       },
+      container: "#292930",
     },
   },
 };

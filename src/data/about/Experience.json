@@ -1,0 +1,16 @@
+{
+  "title": "My Experience",
+  "description": "I have been working as a frontend developer for nearly 3 years, specializing in developing web applications. I have experience with a variety of modern technologies and programming languages, adapting them to meet the specific needs of each project.",
+  "info": [
+    {
+      "date": "2024 - Present",
+      "title": "Frontend Developer at Vakano Studio",
+      "description": "Frontend Developer at Vakano Studio, responsible for developing and maintaining project frontends."
+    },
+    {
+      "date": "2022 - 2024",
+      "title": "Frontend Developer Freelance",
+      "description": "Freelance Frontend Developer, building responsive and user-friendly web applications for diverse clients."
+    }
+  ]
+}

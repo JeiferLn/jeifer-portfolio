@@ -1,0 +1,38 @@
+{
+  "title": "About me",
+  "description": "I am passionate about learning and continuously improving my skills. I enjoy exploring new technologies and applying them creatively. In my free time, I play guitar, read, and share ideas with friends.",
+  "info": [
+    {
+      "fieldName": "Name",
+      "fielValue": "Jeifer Leon"
+    },
+    {
+      "fieldName": "Phone",
+      "fielValue": "+57 315 828 0984"
+    },
+    {
+      "fieldName": "Experience",
+      "fielValue": "2+ Yeras"
+    },
+    {
+      "fieldName": "Email",
+      "fielValue": "jeiferleon@gmail.com"
+    },
+    {
+      "fieldName": "Nacionality",
+      "fielValue": "Colombian"
+    },
+    {
+      "fieldName": "Location",
+      "fielValue": "Cucúta, Colombia"
+    },
+    {
+      "fieldName": "Freelance",
+      "fielValue": "Available"
+    },
+    {
+      "fieldName": "Lenguaje",
+      "fielValue": "Español, Ingles B1"
+    }
+  ]
+}

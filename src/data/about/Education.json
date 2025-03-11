@@ -1,0 +1,21 @@
+{
+  "title": "Education",
+  "description": "I am a person who loves to learn different things. I am passionate about acquiring new knowledge and skills in various fields.",
+  "info": [
+    {
+      "date": "2024 - Present",
+      "title": "Electronic Engineering Student",
+      "description": "Currently studying at National Distance University (UNAD)."
+    },
+    {
+      "date": "2021 - 2024",
+      "title": "Electronic Engineering Student",
+      "description": "Studied up to the 6th semester at Universidad Francisco de Paula de Santander (UFPS)."
+    },
+    {
+      "date": "2021",
+      "title": "High School Graduate",
+      "description": "Graduated from Los Santos Apostoles High School."
+    }
+  ]
+}

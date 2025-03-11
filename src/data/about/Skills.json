@@ -1,0 +1,18 @@
+{
+  "title": "Skills",
+  "description": "I am passionate about learning and continuously improving my skills as a frontend developer. I enjoy exploring new technologies, frameworks, and tools to create engaging and user-friendly web applications.",
+  "info": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "Sass",
+    "Bootstrap",
+    "TailwindCSS",
+    "Framer Motion",
+    "React",
+    "Vite",
+    "Next.js",
+    "Astro"
+  ]
+}
