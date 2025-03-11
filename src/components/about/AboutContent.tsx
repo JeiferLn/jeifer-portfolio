@@ -51,7 +51,11 @@ function AboutContent() {
 
       <div
         className={`w-full grid gap-6 my-8
-        ${information?.title === "Skills" ? "grid-cols-2 lg:grid-cols-4" : "lg:grid-cols-2"}
+        ${
+          information?.title === "Skills"
+            ? "grid-cols-2 lg:grid-cols-4"
+            : "lg:grid-cols-2"
+        }
         `}
       >
         {information?.info?.map((item, index) =>
