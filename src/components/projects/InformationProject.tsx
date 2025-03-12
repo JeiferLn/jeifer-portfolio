@@ -6,6 +6,7 @@ import GithubIcon from "../icons/social-links/GithubIcon";
 import LinkIcon from "../icons/LinkIcon";
 
 import { motion } from "framer-motion";
+import { usePageTransitionStore } from "../../stores/usePageTransitionStore";
 
 interface InformationProjectProps {
   id: number;
@@ -21,6 +22,8 @@ function InformationProject() {
 
   const project = useProjectStore((state) => state.projectCounter);
 
+  const pageChange = usePageTransitionStore((state) => state.pageChange);
+
   useEffect(() => {
     setInformation(projects[project]);
   }, [project]);
@@ -31,7 +34,7 @@ function InformationProject() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ delay: pageChange ? 0.8 : 0, duration: 1 }}
       className="w-full lg:w-[50%] lg:h-[60vh]"
     >
       <p className="text-8xl font-bold text-primary mb-4">0{information?.id}</p>
