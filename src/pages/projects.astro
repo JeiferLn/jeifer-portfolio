@@ -1,10 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import InformationProject from "../components/projects/InformationProject";
+import SliderProject from "../components/projects/SliderProject";
 ---
 
 <Layout>
-  <main>
-    <h1>Projects</h1>
-    <p>Here are some of the projects I've worked on.</p>
+  <main
+    class="flex flex-col-reverse lg:flex-row items-center justify-between w-full h-full gap-6 pt-12"
+  >
+    {/* Information */}
+    <InformationProject client:only />
+
+    {/* Slider */}
+    <SliderProject client:only />
   </main>
 </Layout>

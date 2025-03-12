@@ -3,15 +3,21 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function FaceBookIcon() {
   const pageHidden = usePageTransitionStore((state) => state.pageHidden);
+  const pageChange = usePageTransitionStore((state) => state.pageChange);
 
   return (
     <AnimatePresence>
       {!pageHidden && (
         <motion.svg
+          key={window.location.pathname}
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { duration: 0.5, ease: "easeIn" },
+            transition: {
+              delay: pageChange || pageHidden ? 0.7 : 0,
+              duration: 0.5,
+              ease: "easeIn",
+            },
           }}
           exit={{ opacity: 0, transition: { duration: 0.2, ease: "easeOut" } }}
           xmlns="http://www.w3.org/2000/svg"
