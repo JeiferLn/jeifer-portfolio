@@ -1,10 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import ContactContent from "../components/contact/ContactContent";
+import ContactInformation from "../components/contact/ContactInformation.astro";
 ---
 
 <Layout>
-  <main>
-    <h1>Contact</h1>
-    <p>Get in touch with me.</p>
-  </main>
+  <section
+    class="flex flex-col-reverse lg:flex-row justify-center lg:justify-between lg:pt-4 gap-4"
+  >
+    {/* Contact Content */}
+    <ContactContent client:only />
+    {/* Contact Information */}
+    <ContactInformation />
+  </section>
 </Layout>

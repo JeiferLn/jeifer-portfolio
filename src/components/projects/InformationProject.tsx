@@ -35,7 +35,7 @@ function InformationProject() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ delay: pageChange ? 0.8 : 0, duration: 1 }}
-      className="w-full lg:w-[50%] lg:h-[60vh]"
+      className="w-full lg:w-[50%] lg:h-[45vh] pt-6 lg:pt-0"
     >
       <p className="text-8xl font-bold text-primary mb-4">0{information?.id}</p>
       <h1 className="text-5xl font-semibold text-primary">

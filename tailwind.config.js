@@ -5,10 +5,7 @@ export const content = [
 export const theme = {
   extend: {
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "960px",
-      xl: "1200px",
+
     },
     colors: {
       background: "#1c1c22",
